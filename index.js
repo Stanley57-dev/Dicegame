@@ -21,8 +21,8 @@ let player1Name = document.getElementById("player1Label").innerText || "Player 1
   let randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
   // Update dice images
-  document.querySelector(".img1").setAttribute("src", "images/dice" + randomNumber1 + ".png");
-  document.querySelector(".img2").setAttribute("src", "images/dice" + randomNumber2 + ".png");   
+  document.querySelector(".img1").setAttribute("src", "dice" + randomNumber1 + ".png");
+  document.querySelector(".img2").setAttribute("src", "dice" + randomNumber2 + ".png");   
    
 
   if (randomNumber1 > randomNumber2) {
@@ -35,5 +35,6 @@ let player1Name = document.getElementById("player1Label").innerText || "Player 1
      document.getElementById("resultBox").innerText = "draw🚧 "
   }
 }
+
 
 
